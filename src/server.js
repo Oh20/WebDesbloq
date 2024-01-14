@@ -29,7 +29,7 @@ app.post('/desbloquearUsuario', (req, res) => {
     });
   });
 
-// Reprodução da porta
-app.listen(port, '10.192.80.192', () => {
+// Reprodução da porta (Substituimos o "0.0.0.0" pelo IP ou DNS do servidor)
+app.listen(port, '0.0.0.0', () => {
     console.log(`Servidor executando na porta ${port}`)
 })
