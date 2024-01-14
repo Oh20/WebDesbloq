@@ -12,8 +12,6 @@ app.use(bodyParser.urlencoded({extended: true}))
 app.post('/desbloquearUsuario', (req, res) => {
     const nomeUsuario = req.body.nomeUsuario;
   
-   // const comando = `Unlock-ADAccount -Identity ${nomeUsuario}`;
-  
     exec(`powershell.exe -command "import-module ActiveDirectory; Unlock-ADAccount -identity '${nomeUsuario}'"`, 
     (error, stdout, stderr) => {
       if (error) {
