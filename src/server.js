@@ -33,6 +33,3 @@ app.post('/desbloquearUsuario', (req, res) => {
 app.listen(port, '10.192.80.192', () => {
     console.log(`Servidor executando na porta ${port}`)
 })
-
-let uri = "https://w3schools.com/my test.asp?name=ståle&car=saab";
-let encoded = encodeURIComponent(uri);
