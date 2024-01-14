@@ -6,11 +6,11 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #101820FF;
+  background-color: #222831;
 }
 
 .bloco {
-  background-image: linear-gradient(to bottom right, gold, black, purple);
+  background-image: linear-gradient(to bottom right, #222831, #00ADB5, #393E46);
   padding: 12%;
   max-width: 900px;
   height: auto;
